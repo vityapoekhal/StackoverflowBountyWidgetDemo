@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF48B2FF25DFFA0400372011 /* StackoverflowBountyWidgetDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48B2FE25DFFA0400372011 /* StackoverflowBountyWidgetDemoApp.swift */; };
+		EF48B30125DFFA0400372011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48B30025DFFA0400372011 /* ContentView.swift */; };
+		EF48B30325DFFA0600372011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF48B30225DFFA0600372011 /* Assets.xcassets */; };
+		EF48B30625DFFA0600372011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF48B30525DFFA0600372011 /* Preview Assets.xcassets */; };
+		EF48B31525DFFA4100372011 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48B31425DFFA4100372011 /* WidgetKit.framework */; };
+		EF48B31725DFFA4100372011 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48B31625DFFA4100372011 /* SwiftUI.framework */; };
+		EF48B31A25DFFA4100372011 /* StackoverflowBountyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48B31925DFFA4100372011 /* StackoverflowBountyWidget.swift */; };
+		EF48B31D25DFFA4300372011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF48B31C25DFFA4300372011 /* Assets.xcassets */; };
+		EF48B31F25DFFA4300372011 /* StackoverflowBountyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EF48B31B25DFFA4100372011 /* StackoverflowBountyWidget.intentdefinition */; };
+		EF48B32025DFFA4300372011 /* StackoverflowBountyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EF48B31B25DFFA4100372011 /* StackoverflowBountyWidget.intentdefinition */; };
+		EF48B32325DFFA4300372011 /* StackoverflowBountyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF48B31225DFFA4100372011 /* StackoverflowBountyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF48B32B25DFFA8A00372011 /* StackoverflowBountyWidgetHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48B32A25DFFA8A00372011 /* StackoverflowBountyWidgetHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF48B32125DFFA4300372011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF48B2F325DFFA0400372011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF48B31125DFFA4100372011;
+			remoteInfo = StackoverflowBountyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF48B32725DFFA4300372011 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF48B32325DFFA4300372011 /* StackoverflowBountyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF48B2FB25DFFA0400372011 /* StackoverflowBountyWidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackoverflowBountyWidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48B2FE25DFFA0400372011 /* StackoverflowBountyWidgetDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackoverflowBountyWidgetDemoApp.swift; sourceTree = "<group>"; };
+		EF48B30025DFFA0400372011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF48B30225DFFA0600372011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF48B30525DFFA0600372011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF48B30725DFFA0600372011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF48B31225DFFA4100372011 /* StackoverflowBountyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StackoverflowBountyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48B31425DFFA4100372011 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EF48B31625DFFA4100372011 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EF48B31925DFFA4100372011 /* StackoverflowBountyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackoverflowBountyWidget.swift; sourceTree = "<group>"; };
+		EF48B31B25DFFA4100372011 /* StackoverflowBountyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = StackoverflowBountyWidget.intentdefinition; sourceTree = "<group>"; };
+		EF48B31C25DFFA4300372011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF48B31E25DFFA4300372011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF48B32A25DFFA8A00372011 /* StackoverflowBountyWidgetHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackoverflowBountyWidgetHelpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF48B2F825DFFA0400372011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48B30F25DFFA4100372011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48B31725DFFA4100372011 /* SwiftUI.framework in Frameworks */,
+				EF48B31525DFFA4100372011 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF48B2F225DFFA0400372011 = {
+			isa = PBXGroup;
+			children = (
+				EF48B2FD25DFFA0400372011 /* StackoverflowBountyWidgetDemo */,
+				EF48B31825DFFA4100372011 /* StackoverflowBountyWidget */,
+				EF48B31325DFFA4100372011 /* Frameworks */,
+				EF48B2FC25DFFA0400372011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF48B2FC25DFFA0400372011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF48B2FB25DFFA0400372011 /* StackoverflowBountyWidgetDemo.app */,
+				EF48B31225DFFA4100372011 /* StackoverflowBountyWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF48B2FD25DFFA0400372011 /* StackoverflowBountyWidgetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EF48B2FE25DFFA0400372011 /* StackoverflowBountyWidgetDemoApp.swift */,
+				EF48B30025DFFA0400372011 /* ContentView.swift */,
+				EF48B30225DFFA0600372011 /* Assets.xcassets */,
+				EF48B30725DFFA0600372011 /* Info.plist */,
+				EF48B30425DFFA0600372011 /* Preview Content */,
+			);
+			path = StackoverflowBountyWidgetDemo;
+			sourceTree = "<group>";
+		};
+		EF48B30425DFFA0600372011 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF48B30525DFFA0600372011 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF48B31325DFFA4100372011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF48B31425DFFA4100372011 /* WidgetKit.framework */,
+				EF48B31625DFFA4100372011 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF48B31825DFFA4100372011 /* StackoverflowBountyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EF48B31925DFFA4100372011 /* StackoverflowBountyWidget.swift */,
+				EF48B31B25DFFA4100372011 /* StackoverflowBountyWidget.intentdefinition */,
+				EF48B31C25DFFA4300372011 /* Assets.xcassets */,
+				EF48B31E25DFFA4300372011 /* Info.plist */,
+				EF48B32A25DFFA8A00372011 /* StackoverflowBountyWidgetHelpers.swift */,
+			);
+			path = StackoverflowBountyWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF48B2FA25DFFA0400372011 /* StackoverflowBountyWidgetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48B30A25DFFA0600372011 /* Build configuration list for PBXNativeTarget "StackoverflowBountyWidgetDemo" */;
+			buildPhases = (
+				EF48B2F725DFFA0400372011 /* Sources */,
+				EF48B2F825DFFA0400372011 /* Frameworks */,
+				EF48B2F925DFFA0400372011 /* Resources */,
+				EF48B32725DFFA4300372011 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF48B32225DFFA4300372011 /* PBXTargetDependency */,
+			);
+			name = StackoverflowBountyWidgetDemo;
+			productName = StackoverflowBountyWidgetDemo;
+			productReference = EF48B2FB25DFFA0400372011 /* StackoverflowBountyWidgetDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF48B31125DFFA4100372011 /* StackoverflowBountyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF48B32425DFFA4300372011 /* Build configuration list for PBXNativeTarget "StackoverflowBountyWidgetExtension" */;
+			buildPhases = (
+				EF48B30E25DFFA4100372011 /* Sources */,
+				EF48B30F25DFFA4100372011 /* Frameworks */,
+				EF48B31025DFFA4100372011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackoverflowBountyWidgetExtension;
+			productName = StackoverflowBountyWidgetExtension;
+			productReference = EF48B31225DFFA4100372011 /* StackoverflowBountyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF48B2F325DFFA0400372011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EF48B2FA25DFFA0400372011 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EF48B31125DFFA4100372011 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = EF48B2F625DFFA0400372011 /* Build configuration list for PBXProject "StackoverflowBountyWidgetDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF48B2F225DFFA0400372011;
+			productRefGroup = EF48B2FC25DFFA0400372011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF48B2FA25DFFA0400372011 /* StackoverflowBountyWidgetDemo */,
+				EF48B31125DFFA4100372011 /* StackoverflowBountyWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF48B2F925DFFA0400372011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48B30625DFFA0600372011 /* Preview Assets.xcassets in Resources */,
+				EF48B30325DFFA0600372011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48B31025DFFA4100372011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48B31D25DFFA4300372011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF48B2F725DFFA0400372011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48B32025DFFA4300372011 /* StackoverflowBountyWidget.intentdefinition in Sources */,
+				EF48B30125DFFA0400372011 /* ContentView.swift in Sources */,
+				EF48B2FF25DFFA0400372011 /* StackoverflowBountyWidgetDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF48B30E25DFFA4100372011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF48B31F25DFFA4300372011 /* StackoverflowBountyWidget.intentdefinition in Sources */,
+				EF48B31A25DFFA4100372011 /* StackoverflowBountyWidget.swift in Sources */,
+				EF48B32B25DFFA8A00372011 /* StackoverflowBountyWidgetHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF48B32225DFFA4300372011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF48B31125DFFA4100372011 /* StackoverflowBountyWidgetExtension */;
+			targetProxy = EF48B32125DFFA4300372011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF48B30825DFFA0600372011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF48B30925DFFA0600372011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF48B30B25DFFA0600372011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StackoverflowBountyWidgetDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6MHQ5C8WYH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StackoverflowBountyWidgetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vityapoekhal.StackoverflowBountyWidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF48B30C25DFFA0600372011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StackoverflowBountyWidgetDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6MHQ5C8WYH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StackoverflowBountyWidgetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vityapoekhal.StackoverflowBountyWidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF48B32525DFFA4300372011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MHQ5C8WYH;
+				INFOPLIST_FILE = StackoverflowBountyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vityapoekhal.StackoverflowBountyWidgetDemo.StackoverflowBountyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF48B32625DFFA4300372011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MHQ5C8WYH;
+				INFOPLIST_FILE = StackoverflowBountyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.vityapoekhal.StackoverflowBountyWidgetDemo.StackoverflowBountyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF48B2F625DFFA0400372011 /* Build configuration list for PBXProject "StackoverflowBountyWidgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48B30825DFFA0600372011 /* Debug */,
+				EF48B30925DFFA0600372011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF48B30A25DFFA0600372011 /* Build configuration list for PBXNativeTarget "StackoverflowBountyWidgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48B30B25DFFA0600372011 /* Debug */,
+				EF48B30C25DFFA0600372011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF48B32425DFFA4300372011 /* Build configuration list for PBXNativeTarget "StackoverflowBountyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48B32525DFFA4300372011 /* Debug */,
+				EF48B32625DFFA4300372011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF48B2F325DFFA0400372011 /* Project object */;
+}
